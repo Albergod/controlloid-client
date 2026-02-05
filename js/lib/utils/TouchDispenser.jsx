@@ -98,7 +98,9 @@ export default class TouchDispenser extends React.PureComponent {
     onResponderTerminationRequest: this.releaseResponder,
 
     onResponderGrant: this.handleEvent,
+    onResponderStart: this.handleEvent,
     onResponderMove: this.handleEvent,
+    onResponderEnd: this.handleEvent,
 
     onResponderRelease: this.terminateEvent,
     onResponderTerminate: this.terminateEvent,
